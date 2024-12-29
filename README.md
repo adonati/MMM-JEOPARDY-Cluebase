@@ -1,8 +1,11 @@
-## MMM-JEOPARDY-Enhanced
-Spanning more than 40 years, the widely popular game show comes to your Magic Mirror.
-With more than *156,800* clues and answers from the show.
+## MMM-JEOPARDY-Cluebase
 
-Based on MMM-JEOPARDY by mkyle1, but styled to look like Jeopardy clues.
+Fork of  MMM-JEOPARDY-Enhanced  which was based on MMM-JEOPARDY
+
+Spanning more than 40 years, the widely popular game show comes to your Magic Mirror.
+With more than *350,000* clues and answers from the show.
+
+Based on MMM-JEOPARDY by mkyle1, but styled to look like Jeopardy clues (MMM-JEOPARDY-Enhanced) and pulling Jeopardy data from Cluebase API: https://cluebase.readthedocs.io/en/latest/
 
 ## How it works
 
