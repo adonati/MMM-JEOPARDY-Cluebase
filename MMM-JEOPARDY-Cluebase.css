@@ -4,32 +4,32 @@
  * Pick your color, copy and paste the HEX number. Example - #62FF00 = bright green.
  */
 
-.MMM-JEOPARDY-Enhanced .xsmall.bright.light {
+.MMM-JEOPARDY-Cluebase .xsmall.bright.light {
   color: white;               /* Header color. Default is white. */
            /* Align header text. (left, center, right) */
 }
 
-.MMM-JEOPARDY-Enhanced .xsmall.bright {
+.MMM-JEOPARDY-Cluebase .xsmall.bright {
   color: white;               /* Color the clue. Default is white. */
              /* Align the clue. (left, center, right) */
 }
 
-.MMM-JEOPARDY-Enhanced .question {
+.MMM-JEOPARDY-Cluebase .question {
   color: yellow;               /* Color the answer. Default is white. */
              /* Align the answer. (left, center, right) */
 }
-.MMM-JEOPARDY-Enhanced .vtop {
+.MMM-JEOPARDY-Cluebase .vtop {
    vertical-align: top;
 }
 
-.MMM-JEOPARDY-Enhanced .hleft {
+.MMM-JEOPARDY-Cluebase .hleft {
    text-align: left; 
 }
 
-.MMM-JEOPARDY-Enhanced .hcen {
+.MMM-JEOPARDY-Cluebase .hcen {
    text-align: center; 
 }
-.MMM-JEOPARDY-Enhanced .colorClue {
+.MMM-JEOPARDY-Cluebase .colorClue {
    text-align: center; 
    vertical-align: middle;
    color: white;
@@ -49,6 +49,6 @@
 
 /* Uncomment below if you don't like Alex Trebec and want to remove the picture */
 
-.MMM-JEOPARDY-Enhanced .img {
+.MMM-JEOPARDY-Cluebase .img {
   display: none;  
 } 
