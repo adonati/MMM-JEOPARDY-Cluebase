@@ -58,13 +58,14 @@ Module.register("MMM-JEOPARDY-Cluebase", {
             wrapper.appendChild(header);
         }
 
+        //console.log(JSON.stringify(this.jeopardy.data))
 
-        var jeopardyKeys = Object.keys(this.jeopardy);
+        var jeopardyKeys = this.jeopardy.data; //Object.keys(this.jeopardy);
         if (jeopardyKeys.length > 0) {
             if (this.activeItem >= jeopardyKeys.length) {
                 this.activeItem = 0;
             }
-            var jeopardy = this.jeopardy[jeopardyKeys[this.activeItem]];
+            var jeopardy = this.jeopardy.data[this.activeItem]; // this.jeopardy[jeopardyKeys[this.activeItem]];
 
 
             var top = document.createElement("div");
@@ -177,8 +178,7 @@ Module.register("MMM-JEOPARDY-Cluebase", {
 
 
     processJEOPARDY: function(data) {
-        this.today = data.Today;
-        this.jeopardy = data;
+        this.jeopardy = JSON.parse(data);
     //  console.log(this.jeopardy); checking my data
         this.loaded = true;
     },
@@ -214,3 +214,4 @@ Module.register("MMM-JEOPARDY-Cluebase", {
         this.updateDom(this.config.initialLoadDelay);
     },
 });
+
