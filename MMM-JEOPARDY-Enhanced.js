@@ -31,7 +31,7 @@ Module.register("MMM-JEOPARDY-Enhanced", {
         requiresVersion: "2.1.0",
 
         // Set locale.
-        this.url = "http://jservice.io/api/random?count=100";
+        this.url =  "http://cluebase.lukelav.in/clues/random?limit=100"; // "http://jservice.io/api/random?count=100";
         this.jeopardy = [];
         this.activeItem = 0;
         this.rotateInterval = null;
@@ -92,7 +92,7 @@ Module.register("MMM-JEOPARDY-Enhanced", {
 		    }
 			
             var category = document.createElement("td");
-			var str = jeopardy.category.title;
+			var str = jeopardy.category; // jeopardy.category.title;
 			var res = str.toUpperCase();
             category.classList.add("small", "vtop");
 			if (this.config.showHeading != false)
@@ -143,7 +143,7 @@ Module.register("MMM-JEOPARDY-Enhanced", {
 				else{
 			jeopardyClue.classList.add("colorClue");
 				}
-			jeopardyClue.innerHTML =  jeopardy.question;
+			jeopardyClue.innerHTML =  jeopardy.clue;
             clueRow.appendChild(jeopardyClue);
 			table.appendChild(clueRow);	
 
@@ -165,7 +165,7 @@ Module.register("MMM-JEOPARDY-Enhanced", {
 					jeopardyAnswer.classList.add("hcen");	
 				}
             setTimeout(function() {
-                jeopardyAnswer.innerHTML = "What is " + jeopardy.answer + "?"
+                jeopardyAnswer.innerHTML = "What is " + jeopardy.response + "?"
             }, 20 * 1000);
             questionRow.appendChild(jeopardyAnswer);
 			table.appendChild(questionRow);				
