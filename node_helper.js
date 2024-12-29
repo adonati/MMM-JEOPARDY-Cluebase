@@ -1,7 +1,9 @@
 /* Magic Mirror
- * Module: MMM-JEOPARDY
+ * Module: MMM-JEOPARDY-Cluebase
  *
- * By Mykle1
+ * Based on MMM-JEOPARDY By Mykle1
+ *
+ * This fork uses the Cluebase API (the original API doesn't seem to work any more)
  *
  */
 const NodeHelper = require('node_helper');
@@ -21,20 +23,19 @@ module.exports = NodeHelper.create({
             method: 'GET'
         }, (error, response, body) => {
             if (!error && response.statusCode == 200) {
-                var result = JSON.parse(body); // Parsing an array this line and next line
-			//	console.log(response.statusCode);
-			if (result.length > 0) {
+                var result = body;
+			    //	console.log(response.statusCode);
+		if (result.length > 0) {
                     this.sendSocketNotification('JEOPARDY_RESULT', result);
                 }			
-				
-				
-				
             //    this.sendSocketNotification('JEOPARDY_RESULT', result);
             }
         });
     },
 
     socketNotificationReceived: function(notification, payload) {
+        console.log("NOTIF: " + notification);
+        console.log("PAYLOAD: " + payload);
         if (notification === 'GET_JEOPARDY') {
             this.getJEOPARDY(payload);
         }
