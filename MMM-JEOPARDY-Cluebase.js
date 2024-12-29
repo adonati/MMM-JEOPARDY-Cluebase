@@ -1,10 +1,10 @@
 /* Magic Mirror
- * Module: MMM-JEOPARDY-Enhanced
+ * Module: MMM-JEOPARDY-Cluebase
  *
  * Based on MMM-JEOPARDY by Mykle1
  *
  */
-Module.register("MMM-JEOPARDY-Enhanced", {
+Module.register("MMM-JEOPARDY-Cluebase", {
 
     // Module config defaults.
     defaults: {
@@ -22,7 +22,7 @@ Module.register("MMM-JEOPARDY-Enhanced", {
     },
 
     getStyles: function() {
-        return ["MMM-JEOPARDY-Enhanced.css"];
+        return ["MMM-JEOPARDY-Cluebase.css"];
     },
 
     start: function() {
