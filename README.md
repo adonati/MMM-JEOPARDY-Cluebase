@@ -28,6 +28,8 @@ Fast pace. Challenging. Educational. Fun!
 
 * No API needed!
 
+*Note*: The node_helper module needs the 'request' library, which may have to be installed explicitly
+
 
 ## Config.js entry and options
 
