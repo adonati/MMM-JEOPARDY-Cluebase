@@ -30,10 +30,10 @@ Fast pace. Challenging. Educational. Fun!
 
 *Note*: The node_helper module needs the 'request' library, which may have to be installed explicitly.
 This tidbit from the forum (taken from Sam's response) worked for me:
-* in the module folder
-* if the module does NOT have a package.json file do
+in the module folder
+if the module does NOT have a package.json file do
 npm init -y
-* and then for all cases do
+and then for all cases do
 npm install request -- save
 
 
